@@ -13,6 +13,15 @@ namespace WingtipToys {
     public partial class SiteMaster {
         
         /// <summary>
+        /// cartCount コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor cartCount;
+        
+        /// <summary>
         /// Image1 コントロール。
         /// </summary>
         /// <remarks>
