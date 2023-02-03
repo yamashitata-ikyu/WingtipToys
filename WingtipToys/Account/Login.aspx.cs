@@ -39,6 +39,9 @@ namespace WingtipToys.Account
                 {
                     case SignInStatus.Success:
                         IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                        WingtipToys.Logic.ShoppingCartActions usersShoppingCart = new WingtipToys.Logic.ShoppingCartActions();
+                        String cartId = usersShoppingCart.GetCartId();
+                        usersShoppingCart.MigrateCart(cartId, Email.Text);
                         break;
                     case SignInStatus.LockedOut:
                         Response.Redirect("/Account/Lockout");
